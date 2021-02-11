@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "TT DM Cleaner",
+    "description": "Delete all your Direct Messages",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/messages",
+                "https://twitter.com/messages/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
